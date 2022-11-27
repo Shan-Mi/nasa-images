@@ -1,0 +1,65 @@
+.paperWrapper {
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
+    rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 368px;
+}
+
+.cardContentWrapper {
+  min-height: 292px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image {
+  height: 200px;
+  display: block;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.subtitle {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  color: #1976d2;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding: 8px 0;
+}
+
+.bodyText {
+  color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.keywordsWrapper {
+  display: inline-grid;
+  grid-auto-flow: column;
+  column-gap: 8px;
+  padding-top: 16px;
+  overflow: auto;
+  min-height: 48px;
+  max-width: 336px;
+  width: max-content;
+}
